@@ -1,0 +1,29 @@
+$colour-primary: #1192DC;
+$colour-secondary: #0b163f;
+$colour-accent: #11DCC1;
+$colour-dark: #202020;
+$colour-dark-light: #575757;
+
+.primary {
+    color: $colour-primary !important;
+}
+
+.secondary {
+    color: $colour-secondary !important;
+}
+
+.accent {
+    color: $colour-accent !important;
+}
+
+.bg-primary {
+    background-color: $colour-primary !important;
+}
+
+.bg-secondary {
+    background-color: $colour-secondary !important;
+}
+
+.bg-accent {
+    background-color: $colour-accent !important;
+}
