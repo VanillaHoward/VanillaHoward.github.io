@@ -1,0 +1,49 @@
+@import 'colours.scss';
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        width: 100%;
+    }
+
+    input, textarea {
+        font-size: 1rem;
+        padding: 0.75rem;
+        border: 2px solid rgba(0,0,0,0.08);
+        border-radius: 7px;
+
+        &:focus, &:hover {
+            outline: none;
+        }
+
+        &:hover {
+            border: 2px solid $colour-accent;
+        }
+
+        &:focus {
+            border: 2px solid $colour-primary;
+        }
+    }
+
+    .form-input-group, span {
+        margin: 1rem 1.5rem 1rem 0;
+    }
+
+    textarea {
+        margin: 1rem 0;
+        resize: none;
+    }
+
+    ::placeholder {
+        opacity: 0.85;
+        font-weight: 300;
+    }
+
+    .form-input-group {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}

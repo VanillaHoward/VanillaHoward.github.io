@@ -1,0 +1,35 @@
+@import 'colours.scss';
+
+.button {
+    outline: none !important;
+    background-color: $colour-primary;
+    color: #fff !important;
+    padding: 0.65rem 1.8rem !important;
+    border: none;
+    border-radius: 3px;
+    transition: 0.4s all linear;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $colour-accent;
+    }
+}
+
+.button-outline {
+    @extend .button;
+    color: $colour-secondary !important;
+    background-color: #fff;
+    border: 2px solid $colour-secondary;
+    border-radius: 4px;
+
+    &:hover {
+        color: #fff !important;
+        background-color: $colour-secondary;
+    }
+}
+
+.hover {
+    &:hover {
+        cursor: pointer;
+    }
+}
